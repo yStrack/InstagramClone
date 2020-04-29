@@ -74,9 +74,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 extension HomeViewController{
     func fetchData() -> [Post]{
         let user1 = User(name: "yuri_strack", profilePic: UIImage(named: "profile-pic")!)
-        let post1 = Post(user: user1, location: "Rio de Janeiro", image: UIImage(named: "InstaPost")!, likes: "Curtido por Alex", description: "CarnaVRAU")
+        let post1 = Post(user: user1, location: "Rio de Janeiro", image: UIImage(named: "InstaPost")!, likes: "Curtido por Alex", description: "Carnaval")
         let post2 = Post(user: user1, location: "Rio de Janeiro", image: UIImage(named: "InstaPost")!, likes: "Curtido por Alex", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-        let post3 = Post(user: user1, location: "Rio de Janeiro", image: UIImage(named: "InstaPost")!, likes: "Curtido por Alex", description: "CarnaVRAU")
+        let post3 = Post(user: user1, location: "Rio de Janeiro", image: UIImage(named: "InstaPost")!, likes: "Curtido por Alex", description: "Carnaval")
 //        print(user1)
 //        print(post1)
         return [post1,post2,post3]

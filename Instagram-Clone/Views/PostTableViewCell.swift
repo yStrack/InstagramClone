@@ -49,13 +49,16 @@ class PostTableViewCell: UITableViewCell {
     }
     
     func set(post: Post){
+        var range: NSRange
         self.userName.text = post.user.name
         self.userImage.image = post.user.profilePic
         self.postLocation.text = post.location ?? ""
         self.postImage.image = post.image
-        self.likesLabel.text = post.likes
         
-        let range = NSMakeRange(post.user.name.count, post.description.count+1)
+        range = NSMakeRange(0, 11)
+        self.likesLabel.attributedText = attributedString(from: post.likes, nonBoldRange: range)
+        
+        range = NSMakeRange(post.user.name.count, post.description.count+1)
         self.descriptionLabel.attributedText = attributedString(from: post.user.name + " " + post.description, nonBoldRange: range)
     }
 
