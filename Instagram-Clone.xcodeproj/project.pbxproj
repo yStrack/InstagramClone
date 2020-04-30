@@ -16,6 +16,7 @@
 		DA822E242457517200182822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA822E232457517200182822 /* Assets.xcassets */; };
 		DA822E272457517200182822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA822E252457517200182822 /* LaunchScreen.storyboard */; };
 		DA822E322457570900182822 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA822E312457570900182822 /* Post.swift */; };
+		DAC453C3245B6072009575EA /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC453C2245B6072009575EA /* StoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DA822E262457517200182822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA822E282457517200182822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA822E312457570900182822 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DAC453C2245B6072009575EA /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7220FA24575E7F00BB936E /* PostTableViewCell.swift */,
+				DAC453C2245B6072009575EA /* StoryCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				DA822E1D2457516C00182822 /* SceneDelegate.swift in Sources */,
 				DA7220F924575C8B00BB936E /* User.swift in Sources */,
 				DA822E322457570900182822 /* Post.swift in Sources */,
+				DAC453C3245B6072009575EA /* StoryCollectionViewCell.swift in Sources */,
 				DA7220FB24575E7F00BB936E /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

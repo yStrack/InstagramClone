@@ -22,13 +22,21 @@ class HomeViewController: UIViewController {
     }
     
     func configController(){
+        configTableView()
+        configCollectionView()
+    }
+
+    func configTableView(){
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.tableFooterView = UIView()
     }
-
+    
+    func configCollectionView(){
+        collectionView.dataSource = self
+        collectionView.delegate = self
+    }
 
 }
 
@@ -62,11 +70,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
 // CollectionView extension
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 5
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storiesCell", for: indexPath) as! StoryCollectionViewCell
+        
+        cell.configCell()
+        return cell
     }
     
 }
